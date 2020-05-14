@@ -9,5 +9,5 @@ func main() {
 	fmt.Scanf("%f", &r) //%f for floating numbers but not long ones
 	a = n * (r * r)
 
-	fmt.Printf("A=%g", a)
+	fmt.Printf("A=%.5f\n", a)
 }
