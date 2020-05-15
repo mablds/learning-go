@@ -8,10 +8,7 @@ func main() {
 	fmt.Scanf("%d", &a)
 	fmt.Scanf("%d", &b)
 
-	fmt.Println(a) //printing just to debug
-	fmt.Println(b) //printing just to debug
+	prod := a * b
 
-	produto := a * b
-
-	fmt.Printf("PROD = %v\n", produto)
+	fmt.Printf("PROD = %v\n", prod)
 }
