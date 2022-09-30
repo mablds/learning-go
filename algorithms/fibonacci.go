@@ -6,17 +6,15 @@ func main() {
 	Fibonacci(10)
 }
 
-func Fibonacci(number int) int {
-	if number <= 1 {
-		return number
+func Fibonacci(n int) int {
+	if n <= 1 {
+		return n
 	}
 
-	// preencher as variáveis com os valores iniciais
 	var penultResult, lastResult, result int
 	penultResult, lastResult = 0, 1
 
-	//interação para preencher até o index passado por parametro
-	for currentIndice := 2; currentIndice <= number; currentIndice++ {
+	for curr := 2; curr <= n; curr++ {
 		result = lastResult + penultResult
 		penultResult = lastResult
 		lastResult = result
